@@ -4,7 +4,7 @@ const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 const headers = {
   "Content-Type": "application/json",
   "apikey": SUPABASE_KEY,
-  "Authorization": `Bearer ${SUPABASE_KEY}`,
+  "Authorization": "Bearer " + SUPABASE_KEY,
 };
 
 async function sbFetch(path, options = {}) {
